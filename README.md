@@ -13,5 +13,20 @@ The component takes the following parameters:
 * labelOff: (true || false) *// (the text shown when switch is OFF)*
 * hideText: (true || false) *// (will hide the switch text when true)*
 
+**EXAMPLE:**
+```javascript
+var controller = Em.Controller.extend({
+  switchChecked: true,
+  switchDisabled: false
+});
+
+{{switch-component
+labelOn='On'
+labelOff='Off'
+isCheckedBinding=switchChecked
+isDisabledBinding=switchDisabled
+}}
+```
+
 #### Custom Styling:
 You can style this switch by overriding the CSS specified in dist/ember-switch.css
