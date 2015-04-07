@@ -1,0 +1,31 @@
+{
+  "name": "ember-switch",
+  "version": "0.0.1",
+  "homepage": "https://github.com/grese/ember-switch",
+  "authors": [
+    "grese <grese@yahoo-inc.com>"
+  ],
+  "main": [
+    "dist/ember-switch.min.js",
+    "dist/ember-switch.css"
+  ],
+  "description": "A switch component for ember",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "build",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "ember": "~1.8.1",
+    "bootstrap": ">=3.0"
+  },
+  "devDependencies": {
+    "ember-qunit-builds": "git://github.com/rwjblue/ember-qunit-builds.git"
+  }
+}
