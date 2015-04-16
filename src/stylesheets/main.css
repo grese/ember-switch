@@ -10,11 +10,16 @@
 .switch-label {
   margin: 0 2px 0 0;
   position: relative;
-  width: 35px;
+  width: 28px;
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
+  height: 15px;
+  vertical-align: middle;
+}
+.switch.switch-label-left .switch-label{
+  margin: 0 0 0 2px;
 }
 .switch-inner {
   width: 200%;
@@ -44,17 +49,14 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 15px;
-  margin: 3px;
+  width: 12px;
+  margin: 1px;
   background: #ffffff; /* switch-control color */
   border-radius: 15px;
   right: 14px;
   -webkit-transition: right 0.3s;
   -o-transition: right 0.3s;
   transition: right 0.3s;
-}
-.switch-text {
-  vertical-align: super;
 }
 .switch-text-on {
   display: none;
