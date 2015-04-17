@@ -9,7 +9,7 @@
   display: none;
 }
 .switch-label {
-  margin: 0 2px 0 0;
+  margin: 0 4px 0 0;
   position: relative;
   width: 30px;
   display: inline-block;
@@ -20,7 +20,7 @@
   vertical-align: middle;
 }
 .switch.switch-label-left .switch-label{
-  margin: 0 0 0 2px;
+  margin: 0 0 0 4px;
 }
 .switch-inner {
   width: 200%;
