@@ -12,6 +12,7 @@ The component takes the following parameters:
 * labelOn: (true || false) *// (the text shown when switch is ON)*
 * labelOff: (true || false) *// (the text shown when switch is OFF)*
 * hideText: (true || false) *// (will hide the switch text when true)*
+* labelPosition: ('left' || 'right') *// right by default. (will position the switch label on left or right)*
 
 **EXAMPLE:**
 ```javascript
@@ -25,6 +26,7 @@ labelOn='On'
 labelOff='Off'
 isCheckedBinding=switchChecked
 isDisabledBinding=switchDisabled
+labelPosition='left'
 }}
 ```
 
