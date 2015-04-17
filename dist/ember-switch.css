@@ -3,6 +3,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-size: 12px;
 }
 .switch-checkbox {
   display: none;
@@ -10,12 +11,12 @@
 .switch-label {
   margin: 0 2px 0 0;
   position: relative;
-  width: 28px;
+  width: 30px;
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 20px;
-  height: 15px;
+  border-radius: 30px;
+  height: 17px;
   vertical-align: middle;
 }
 .switch.switch-label-left .switch-label{
@@ -39,7 +40,7 @@
 }
 .switch-inner:before {
   content: "";
-  background-color: #0d9af8; /* switch-on color */
+  background-color: #0078FF; /* switch-on color */
 }
 .switch-inner:after {
   content: "";
@@ -49,7 +50,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 12px;
+  width: 15px;
   margin: 1px;
   background: #ffffff; /* switch-control color */
   border-radius: 15px;
