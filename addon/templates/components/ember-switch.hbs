@@ -1,0 +1,17 @@
+<div {{bind-attr class=':switch _positionClass'}}>
+    {{#if _positionLeft}}
+        {{#unless hideText}}
+            <span class='switch-text'>{{labelText}}</span>
+        {{/unless}}
+    {{/if}}
+    {{input type='checkbox' classNames='switch-checkbox' checkedBinding='isChecked' disabledBinding='isDisabled' viewName="switchCheckbox"}}
+    <label class='switch-label' {{bind-attr for='switchCheckbox.elementId'}}>
+        <div class='switch-inner'></div>
+        <div class='switch-control'></div>
+    </label>
+    {{#unless _positionLeft}}
+        {{#unless hideText}}
+            <span class='switch-text'>{{labelText}}</span>
+        {{/unless}}
+    {{/unless}}
+</div>

@@ -1,3 +1,6 @@
+/*!
+* ember-switch v1.0.0
+*/
 .switch {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -19,7 +22,7 @@
   height: 17px;
   vertical-align: middle;
 }
-.switch.switch-label-left .switch-label{
+.switch.switch-label-left .switch-label {
   margin: 0 0 0 4px;
 }
 .switch-inner {
@@ -40,11 +43,13 @@
 }
 .switch-inner:before {
   content: "";
-  background-color: #0078FF; /* switch-on color */
+  background-color: #0078FF;
+  /* switch-on color */
 }
 .switch-inner:after {
   content: "";
-  background-color: #898989; /* switch-off color */
+  background-color: #898989;
+  /* switch-off color */
 }
 .switch-control {
   position: absolute;
@@ -52,7 +57,8 @@
   bottom: 0;
   width: 15px;
   margin: 1px;
-  background: #ffffff; /* switch-control color */
+  background: #ffffff;
+  /* switch-control color */
   border-radius: 15px;
   right: 14px;
   -webkit-transition: right 0.3s;
@@ -75,8 +81,7 @@
 .switch-checkbox:checked + .switch-label .switch-inner {
   margin-left: 0;
 }
-
-.switch-checkbox + .switch-label .switch-control{
+.switch-checkbox + .switch-label .switch-control {
   margin: 1px 0 1px 2px;
 }
 .switch-checkbox:checked + .switch-label .switch-control {
