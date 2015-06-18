@@ -1,4 +1,5 @@
 # ember-switch
+[![Build Status](http://api.screwdriver.corp.yahoo.com:4080/badge/40274/component/icon)](http://api.screwdriver.corp.yahoo.com:4080/badge/40274/component/target)
 A switch component for ember.
 
 #### Installation:

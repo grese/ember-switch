@@ -1,11 +1,14 @@
 {
-  "framework": "mocha",
-  "test_page": "tests/index.html?hidepassed&coverage=true",
-  "launch_in_ci": [
-    "PhantomJS"
-  ],
-  "launch_in_dev": [
-    "PhantomJS",
-    "Chrome"
-  ]
+    "framework": "mocha",
+    "test_page": "tests/index.html?hidepassed&coverage=true",
+    "on_start": "ember build",
+    "cwd": "dist",
+    "phantomjs_debug_port": 9000,
+    "launch_in_ci": [
+        "PhantomJS"
+    ],
+    "launch_in_dev": [
+        "PhantomJS",
+        "Chrome"
+    ]
 }
