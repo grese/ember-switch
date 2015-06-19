@@ -52,8 +52,8 @@ var compiled = compileES6(jsTree, {
 compiled = wrap(compiled);
 
 // Compile LESS
-var lessTree = pickFiles('addon/styles', { srcDir: '/', destDir: '/' });
-var lessMain = 'addon.less';
+var lessTree = pickFiles('app/styles', { srcDir: '/', destDir: '/' });
+var lessMain = namespace + '.less';
 var lessOutput = namespace + '.css';
 lessTree = less(lessTree, lessMain, lessOutput);
 
