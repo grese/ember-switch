@@ -8,6 +8,10 @@
 /bower_components
 
 # misc
+/artifacts/test/*
+/artifacts/coverage/*
+!/artifacts/coverage/.gitkeep
+!/artifacts/test/.gitkeep
 /lcov.dat
 /.sass-cache
 /connect.lock

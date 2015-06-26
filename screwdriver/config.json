@@ -12,42 +12,38 @@
                     "task": "script",
                     "command": "ynpm install"
                 }]
+            },
+            "lint": {
+                "task": "none"
+            },
+            "test": {
+                "name": "Unit Tests",
+                "task": "script",
+                "command": "ynpm run-script test-ci",
+                "after": [
+                    {
+                        "task": "script",
+                        "command": "ynpm run-script report-coverage"
+                    }
+                ]
+            },
+            "docs": {
+                "task": "none"
+            },
+            "publish": {
+                "task": "none"
+            },
+            "deploy": {
+                "task": "none"
             }
         }
     },
     "jobs": {
+        "pull-request": {
+            "order": ["init", "lint", "test"]
+        },
         "component": {
-            "manhattan_instance": "trunk.development.manhattan.gq1.yahoo.com",
-            "build": {
-                "lint": {
-                    "task": "none"
-                },
-                "test": {
-                    "task": "npm-test",
-                    "line_coverage_threshold": 0,
-                    "name": "Run tests using our runner",
-                    "before": ["ynpm run-script bower"],
-                    "after": [
-                        {
-                            "task": "script",
-                            "command": "mkdir -p ${COVERAGE_DIR}/lcov-report && genhtml ${SRC_DIR}/lcov.dat -o ${COVERAGE_DIR}/lcov-report --no-source && cp ${SRC_DIR}/lcov.dat ${COVERAGE_DIR}/lcov.info"
-                        },
-                        {
-                            "task": "script",
-                            "command": "mv ${SRC_DIR}/results.tap ${TEST_RESULTS_DIR}/"
-                        }
-                    ]
-                },
-                "docs": {
-                    "task": "none"
-                },
-                "publish": {
-                    "task": "none"
-                },
-                "deploy": {
-                    "task": "none"
-                }
-            }
+            "order": ["init", "lint", "test"]
         }
     }
 }
